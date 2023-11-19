@@ -1,7 +1,7 @@
 # CMPE 273 Hackathon
 
 ## Project Architecture
-![Architecture](https://github.com/sjkchang/CMPE273-Hackathon/blob/master/HackathonArchitecture.pdf)
+![Architecture](https://raw.githubusercontent.com/sjkchang/CMPE273-Hackathon/master/HackathonArchitecture.pdf)
 
 
 ### How to Run

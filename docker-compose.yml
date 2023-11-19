@@ -16,6 +16,18 @@ services:
             timeout: 1m30s
             retries: 5
             start_period: 5s
+    backend:
+        image: sjkchang/hackathon-backend
+        ports:
+            - 5000:5000
+        environment:
+            - REDIS_HOST=host.docker.internal
+            - REDIS_PORT=6379
+            - REDIS_PASSWORD="password"
+            - OPENAI_API_KEY=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
+
+        depends_on:
+            - vector-db
 
 volumes:
     vector-db:

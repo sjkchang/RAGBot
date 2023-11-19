@@ -30,7 +30,7 @@ def getConnection():
     redis_client = redis.Redis(
         host=REDIS_HOST,
         port=REDIS_PORT,
-        password=REDIS_PASSWORD
+        password=""
     )
     return redis_client
 

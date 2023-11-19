@@ -1,3 +1,0 @@
-{
-    "python.analysis.extraPaths": ["./document-as-context/redis"]
-}

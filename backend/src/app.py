@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from flask import request
 import redis
 import os
@@ -16,6 +17,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 client = openai.OpenAI()
 
 app = Flask(__name__)
+CORS(app)
 
 redis_connection = vector_db.getConnection()
 print(ingest.ingest(redis_connection))
@@ -67,7 +69,7 @@ def chatbot_query():
             documents.append({'role': 'system', 'content': "Use this in section of a document to aid in your responses: " + related_documents["documents"][i]["content"]})
         
         if("messages" not in body):
-            messages = [{'role': 'system', 'content': "You are a Macro Economics Assistant with expertise in Indias budget"}]
+            messages = [{'role': 'system', 'content': "You are a Macro Economics Assistant with expertise in Indias budget. Do not mention document pages in your response"}]
         else:
             messages = []
         if 'messages' in body:
@@ -117,4 +119,4 @@ def get_queries_responses():
     return {"data": data_dict}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")

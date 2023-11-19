@@ -8,6 +8,7 @@
 ## Getting Started
 ### Prerequisites: 
 NodeJS & NPM - Install Guides can be found [official Node.js website](https://nodejs.org/)
+
 Docker - Install Guides can be found [official Docker website](https://www.docker.com/get-started/)
 
 ### Start Backend

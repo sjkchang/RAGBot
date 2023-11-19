@@ -11,6 +11,8 @@ NodeJS & NPM - Install Guides can be found [official Node.js website](https://no
 
 Docker - Install Guides can be found [official Docker website](https://www.docker.com/get-started/)
 
+An OpenAI API Key
+
 ### Start Backend
 Add your OPEN AI API key to the docker compose file, then run
 ```

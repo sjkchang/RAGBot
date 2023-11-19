@@ -4,6 +4,11 @@
 
 ![Architecture](HackathonArchitecture.jpg)
 
+## Demo Screenshots
+![No Prompt](screenshots/Empty.png)
+![One Prompt](screenshots/Sustainability-Statements.png)
+![Two Prompt](screenshots/SocialSustainability.png)
+
 
 ## Getting Started
 ### Prerequisites: 

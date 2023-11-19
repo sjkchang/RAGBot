@@ -2,7 +2,7 @@
 
 ## Project Architecture
 
-![Architecture](HackathonArchitecture.pdf)
+![Architecture](HackathonArchitecture.jpg)
 
 
 ### How to Run

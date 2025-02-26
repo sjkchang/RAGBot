@@ -1,4 +1,4 @@
-# CMPE 273 Hackathon
+# CMPE 273 Hackathon (RAGBot)
 
 ## Project Architecture
 
